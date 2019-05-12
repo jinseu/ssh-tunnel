@@ -10,14 +10,6 @@ import (
 	"runtime"
 )
 
-const (
-	DATEFORMAT             = "2006010215"
-	TIMEFORMAT             = "2006-01-02 15:04:05"
-	DEFAULT_FILE_SIZE      = 1600000000 //1.6G
-	DEFAULT_LOG_QUEUE_SIZE = 2000
-	DEFAULT_LOG_LEVEL      = TRACE
-)
-
 type LEVEL byte
 
 const (
@@ -27,6 +19,16 @@ const (
 	ERROR
 	OFF
 )
+
+const (
+	DATEFORMAT             = "2006010215"
+	TIMEFORMAT             = "2006-01-02 15:04:05"
+	DEFAULT_FILE_SIZE      = 1600000000 //1.6G
+	DEFAULT_LOG_QUEUE_SIZE = 2000
+	DEFAULT_LOG_LEVEL      = DEBUG
+)
+
+
 // FileLogger 日志按小时拆分，有单文件大小限制
 type FileLogger struct {
 	fileDir     string
@@ -367,6 +369,12 @@ func Error(format string, v ...interface{}) {
 		return
 	}
 	log(ERROR, fmt.Sprintf("[ERROR] " + format + "\n", v...))
+}
+
+func Fatal(format string, v ...interface{}){
+	log(ERROR, fmt.Sprintf("[ERROR] " + format + "\n", v...))
+	Flush()
+	os.Exit(1)
 }
 
 func ErrorStack(traceDepth int, format string, v ...interface{}) {
