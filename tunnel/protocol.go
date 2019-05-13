@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"time"
 
+	"jinseu/ssh-tunnel/conf"
 	"jinseu/ssh-tunnel/logger"
 )
 
@@ -19,15 +20,18 @@ type Protocol struct {
 	HTTPTransport *http.Transport
 }
 
-func NewProtocol(shouldProxyTimeout time.Duration) *Protocol {
-	if shouldProxyTimeout == 0 {
-		shouldProxyTimeout = 200 * time.Millisecond
-	}
+func NewProtocol(c *conf.Config) *Protocol {
+	shouldProxyTimeout := 200 * time.Millisecond
 	transport := http.DefaultTransport.(*http.Transport)
-	tr.Dial = (&net.Dialer{
+	transport.Dial = (&net.Dialer{
 		Timeout: shouldProxyTimeout,
 	}).Dial
-	return &Direct{Transport: transport}
+
+	sshTransport, _ := NewSSH(c)
+	return &Protocol{
+		SSHTransport: sshTransport,
+		HTTPTransport: transport,
+	}
 }
 
 func (prtc *Protocol) ServeHTTP(w http.ResponseWriter, r *http.Request) (err error) {

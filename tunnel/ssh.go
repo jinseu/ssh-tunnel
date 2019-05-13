@@ -20,8 +20,6 @@ type SSH struct {
 	URL    *url.URL
 	Client *ssh.Client
 	CliCfg *ssh.ClientConfig
-	Direct *Direct
-	sf     Group
 	l      sync.RWMutex
 }
 
@@ -47,8 +45,8 @@ func initPassword(client *SSH){
 
 }
 
-func NewSSH(c *conf.Config) (client *SSH, err error) {
-	client = &SSH{
+func NewSSH(c *conf.Config) *http.Transport {
+	client := &SSH{
 		Config: c,
 		CliCfg: &ssh.ClientConfig{},
 	}
@@ -110,10 +108,7 @@ func NewSSH(c *conf.Config) (client *SSH, err error) {
 		return cli.Dial(network, addr)
 	}
 
-	client.Direct = &Direct{
-		Tr: &http.Transport{Dial: dial},
-	}
-	return
+	return &http.Transport{Dial: dial},
 }
 
 func (client *SSH) ServeHTTP(w http.ResponseWriter, r *http.Request) {
