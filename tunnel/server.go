@@ -35,7 +35,7 @@ type Server struct {
 }
 
 // Create and intialize
-func NewServer(c *Config) (svr *Server, err error) {
+func NewServer(c *conf.Config) (svr *Server, err error) {
 	ssh, err := NewSSH(c)
 	if err != nil {
 		return

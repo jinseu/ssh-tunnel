@@ -24,7 +24,7 @@ func serve(configFile string) {
 	wait := make(chan int)
 
 	go func() {
-		smart, err := NewServer(SmartSrv, c)
+		smart, err := tunnel.NewServer(c)
 		if err != nil {
 			L.Fatalln(err)
 		}
@@ -63,11 +63,11 @@ func main() {
 	configFile   := flag.String("config", "$HOME/.config/mallory.json", "config file")
 	publicSuffix := flag.String("suffix", "", "print pulbic suffix for the given domain")
 	reload       := flag.Bool("reload", false, "send signal to reload config file")
-	logDir       := flag.String("log-dir", ".", "log dir")
+	logDir       := flag.String("log-dir", "./", "log dir")
 
 	flag.Parse()
 
-	logger.InitGlobalLogger(logDir, "client", 1024 * 1024 * 100, logger.INFO)
+	logger.InitGlobalLogger(*logDir, "client", 1024 * 1024 * 100, logger.INFO)
 
 	if *FSuffix != "" {
 		getPublicSuffix(*publicSuffix)

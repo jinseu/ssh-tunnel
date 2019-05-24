@@ -24,8 +24,7 @@ type SSH struct {
 }
 
 func initPublicKey(client *SSH){
-	id_rsa := c.PrivateKey
-	pem, err := ioutil.ReadFile(id_rsa)
+	pem, err := ioutil.ReadFile(c.PrivateKey)
 	if err != nil {
 		logger.Error("ReadFile %s failed:%s\n", c.PrivateKey, err)
 		return
@@ -108,7 +107,7 @@ func NewSSH(c *conf.Config) *http.Transport {
 		return cli.Dial(network, addr)
 	}
 
-	return &http.Transport{Dial: dial},
+	return &http.Transport{Dial: dial}
 }
 
 func (client *SSH) ServeHTTP(w http.ResponseWriter, r *http.Request) {

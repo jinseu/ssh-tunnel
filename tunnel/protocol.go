@@ -9,6 +9,7 @@ import (
 
 	"jinseu/ssh-tunnel/conf"
 	"jinseu/ssh-tunnel/logger"
+	"jinseu/ssh-tunnel/util"
 )
 
 var (
@@ -16,8 +17,8 @@ var (
 )
 
 type Protocol struct {
-	SSHTransport *http.Transport
-	HTTPTransport *http.Transport
+	ssh *http.Transport
+	http *http.Transport
 }
 
 func NewProtocol(c *conf.Config) *Protocol {
@@ -27,10 +28,10 @@ func NewProtocol(c *conf.Config) *Protocol {
 		Timeout: shouldProxyTimeout,
 	}).Dial
 
-	sshTransport, _ := NewSSH(c)
+	sshTransport := NewSSH(c)
 	return &Protocol{
-		SSHTransport: sshTransport,
-		HTTPTransport: transport,
+		ssh: sshTransport,
+		http: transport,
 	}
 }
 
@@ -42,39 +43,39 @@ func (prtc *Protocol) ServeHTTP(w http.ResponseWriter, r *http.Request) (err err
 	}
 	start := time.Now()
 
-	resp, err := prtc.Tr.RoundTrip(r)
+	resp, err := prtc.ssh.RoundTrip(r)
 	if err != nil {
 		if nerr, ok := err.(net.Error); ok && nerr.Timeout() {
-			L.Printf("RoundTrip: %s, reproxy...\n", err.Error())
+			logger.Error("RoundTrip: %s, reproxy...\n", err.Error())
 			err = ErrShouldProxy
 			return
 		}
-		L.Printf("RoundTrip: %s\n", err.Error())
+		logger.Info("RoundTrip: %s\n", err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 	defer resp.Body.Close()
 
 	// please prepare header first and write them
-	CopyHeader(w, resp)
+	util.CopyHeader(w, resp)
 	w.WriteHeader(resp.StatusCode)
 
 	n, err := io.Copy(w, resp.Body)
 	if err != nil {
-		L.Printf("Copy: %s\n", err.Error())
+		logger.Error("Copy: %s\n", err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	d := FormatHumDuration(time.Since(start))
-	ndtos := FormatHunSize(n)
-	L.Printf("RESPONSE %s %s in %s <-%s\n", r.URL.Host, resp.Status, d, ndtos)
+	d := util.FormatHumDuration(time.Since(start))
+	ndtos := util.FormatHunSize(n)
+	logger.Info("RESPONSE %s %s in %s <-%s\n", r.URL.Host, resp.Status, d, ndtos)
 	return
 }
 
 func (prtc *Protocol) Connect(w http.ResponseWriter, r *http.Request) (err error) {
 	if r.Method != "CONNECT" {
-		L.Println("this function can only handle CONNECT method")
+		logger.Error("this function can only handle CONNECT method")
 		http.Error(w, r.Method, http.StatusMethodNotAllowed)
 		return
 	}
