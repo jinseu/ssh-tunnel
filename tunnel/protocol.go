@@ -91,7 +91,7 @@ func (prtc *Protocol) Connect(w http.ResponseWriter, r *http.Request) (err error
 	}
 
 	// connect the remote client directly
-	dst, err := prtc.Tr.Dial("tcp", r.URL.Host)
+	dst, err := prtc.ssh.Dial("tcp", r.URL.Host)
 	if err != nil {
 		if nerr, ok := err.(net.Error); ok && nerr.Timeout() {
 			logger.Error("RoundTrip: %s, reproxy...\n", err.Error())
@@ -130,8 +130,8 @@ func (prtc *Protocol) Connect(w http.ResponseWriter, r *http.Request) (err error
 	dtos := make(chan int64)
 	go copyAndWait(src, dst, dtos)
 
-	nstod, ndtos := FormatHunSize(<-stod), FormatHunSize(<-dtos)
-	d := FormatHumDuration(time.Since(start))
-	L.Printf("CLOSE %s after %s ->%s <-%s\n", r.URL.Host, d, nstod, ndtos)
+	nstod, ndtos := util.FormatHunSize(<-stod), util.FormatHunSize(<-dtos)
+	d := util.FormatHumDuration(time.Since(start))
+	logger.Info("CLOSE %s after %s ->%s <-%s\n", r.URL.Host, d, nstod, ndtos)
 	return
 }

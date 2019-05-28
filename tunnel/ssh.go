@@ -51,7 +51,7 @@ func NewSSH(c *conf.Config) *http.Transport {
 	}
 	client.URL, err = url.Parse(c.RemoteAddress)
 	if err != nil {
-		return
+		return nil
 	}
 
 	if client.URL.User != nil {
@@ -59,7 +59,8 @@ func NewSSH(c *conf.Config) *http.Transport {
 	} else {
 		u, err := user.Current()
 		if err != nil {
-			return _, err
+			logger.Info("GET Current User Error%s", err.Error())
+			return nil
 		}
 		client.CliCfg.User = u.Username
 	}
@@ -70,8 +71,8 @@ func NewSSH(c *conf.Config) *http.Transport {
 	}
 
 	if len(self.CliCfg.Auth) == 0 {
-		err = errors.New("Invalid auth method, please add password or generate ssh keys")
-		return
+		logger.Fa("Invalid auth method, please add password or generate ssh keys")
+		return nil
 	}
 
 	client.Client, err = ssh.Dial("tcp", self.URL.Host, self.CliCfg)
