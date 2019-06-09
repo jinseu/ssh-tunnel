@@ -1,7 +1,6 @@
 package tunnel
 
 import (
-	"errors"
 	"io/ioutil"
 	"net"
 	"net/http"
@@ -23,98 +22,72 @@ type SSH struct {
 	l      sync.RWMutex
 }
 
-func initPublicKey(client *SSH){
-	pem, err := ioutil.ReadFile(c.PrivateKey)
+func initPublicKey(conf *conf.Config, cliCfg *ssh.ClientConfig) error {
+	pem, err := ioutil.ReadFile(conf.PrivateKey)
 	if err != nil {
-		logger.Error("ReadFile %s failed:%s\n", c.PrivateKey, err)
-		return
+		logger.Error("ReadFile %s failed:%s\n", conf.PrivateKey, err)
+		return err
 	}
 	signer, err := ssh.ParsePrivateKey(pem)
 	if err != nil {
-		logger.Error("ParsePrivateKey %s failed:%s\n", c.PrivateKey, err)
-		return
+		logger.Error("ParsePrivateKey %s failed:%s\n", conf.PrivateKey, err)
+		return err
 	}
-	ssh.CliCfg.Auth = append(ssh.CliCfg.Auth, ssh.PublicKeys(signer))
+	cliCfg.Auth = append(cliCfg.Auth, ssh.PublicKeys(signer))
+	return nil
 }
 
-func initPassword(client *SSH){
-	if pass, ok := client.URL.User.Password(); ok {
-		client.CliCfg.Auth = append(client.CliCfg.Auth, ssh.Password(pass))
+func initPassword(cliCfg *ssh.ClientConfig, URL *url.URL){
+	if pass, ok := URL.User.Password(); ok {
+		cliCfg.Auth = append(cliCfg.Auth, ssh.Password(pass))
 	}
-
 }
 
 func NewSSH(c *conf.Config) *http.Transport {
-	client := &SSH{
-		Config: c,
-		CliCfg: &ssh.ClientConfig{},
-	}
-	client.URL, err = url.Parse(c.RemoteAddress)
+	cliCfg := &ssh.ClientConfig{}
+
+	URL, err := url.Parse(c.RemoteAddress)
 	if err != nil {
 		return nil
 	}
 
-	if client.URL.User != nil {
-		client.CliCfg.User = client.URL.User.Username()
+	if URL.User != nil {
+		cliCfg.User = URL.User.Username()
 	} else {
 		u, err := user.Current()
 		if err != nil {
 			logger.Info("GET Current User Error%s", err.Error())
 			return nil
 		}
-		client.CliCfg.User = u.Username
+		cliCfg.User = u.Username
 	}
 
-	initPublicKey(client)
-	if len(client.CliCfg.Auth) == 0 {
-		initPassword(client)
+	initPublicKey(c, cliCfg)
+	if len(cliCfg.Auth) == 0 {
+		initPassword(cliCfg, URL)
 	}
 
-	if len(self.CliCfg.Auth) == 0 {
-		logger.Fa("Invalid auth method, please add password or generate ssh keys")
+	if len(cliCfg.Auth) == 0 {
+		logger.Fatal("Invalid auth method, please add password or generate ssh keys")
 		return nil
 	}
 
-	client.Client, err = ssh.Dial("tcp", self.URL.Host, self.CliCfg)
+	client, err := ssh.Dial("tcp", URL.Host, cliCfg)
 	if err != nil {
-		return
+		logger.Error(err.Error())
+		return nil
 	}
 
 	dial := func(network, addr string) (c net.Conn, err error) {
-		self.l.RLock()
-		cli := self.Client
-		self.l.RUnlock()
 
-		c, err = cli.Dial(network, addr)
-		if err == nil {
-			return
-		}
-
-		L.Printf("dial %s failed: %s, reconnecting ssh server %s...\n", addr, err, self.URL.Host)
-
-		clif, err := self.sf.Do(network+addr, func() (interface{}, error) {
-			return ssh.Dial("tcp", self.URL.Host, self.CliCfg)
-		})
+		c, err = client.Dial(network, addr)
 		if err != nil {
-			L.Printf("connect ssh server %s failed: %s\n", self.URL.Host, err)
+			logger.Info("dial %s failed: %s, ", addr, err)
 			return
 		}
-		cli = clif.(*ssh.Client)
-
-		self.l.Lock()
-		self.Client = cli
-		self.l.Unlock()
-
-		return cli.Dial(network, addr)
+        return c, nil
 	}
 
 	return &http.Transport{Dial: dial}
 }
 
-func (client *SSH) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	client.Direct.ServeHTTP(w, r)
-}
-
-func (client *SSH) Connect(w http.ResponseWriter, r *http.Request) {
-	client.Direct.Connect(w, r)
-}

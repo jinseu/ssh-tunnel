@@ -8,7 +8,6 @@ import (
 )
 
 type Config struct {
-	KeyPath       string   `json:"key_path"`
 	PrivateKey    string   `json:"private_key"`
 	LocalAddress  string   `json:"local_address"`
 	RemoteAddress string   `json:"remote_address"`
@@ -19,6 +18,7 @@ type Config struct {
 // Load file from path
 func NewConfig(path string) (*Config, error) {
 	conf := &Config{}
+	path = os.ExpandEnv(path)
 	buf, err := ioutil.ReadFile(path)
 	if err != nil {
 		return nil, err
