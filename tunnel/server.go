@@ -36,11 +36,6 @@ type Server struct {
 
 // Create and intialize
 func NewServer(c *conf.Config) (svr *Server, err error) {
-	/*
-	ssh := NewSSH(c)
-	if err != nil {
-		return
-	}*/
     prtc := NewProtocol(c)
 	svr = &Server{
 		Cfg: c,

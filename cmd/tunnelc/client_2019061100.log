@@ -1,0 +1,867 @@
+2019-06-11 00:24:26 [main.go:25][INFO] LOCAL_SERVER HTTP proxy: 127.0.0.1:28999
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51621: read: connection reset by peer
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51620: read: connection reset by peer
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51619: read: connection reset by peer
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51622: read: connection reset by peer
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51623: read: connection reset by peer
+
+2019-06-11 00:27:13 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:51624: read: connection reset by peer
+
+2019-06-11 00:31:01 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 241s ->2KB <-1KB
+
+2019-06-11 00:31:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51619: write tcp 127.0.0.1:28999->127.0.0.1:51619: write: broken pipe
+
+2019-06-11 00:31:02 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 241s ->641B <-776B
+
+2019-06-11 00:31:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51623: write tcp 127.0.0.1:28999->127.0.0.1:51623: write: broken pipe
+
+2019-06-11 00:31:02 [protocol.go:135][INFO] CLOSE id.google.com.hk:443 after 240s ->642B <-776B
+
+2019-06-11 00:31:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51622: write tcp 127.0.0.1:28999->127.0.0.1:51622: write: broken pipe
+
+2019-06-11 00:31:02 [protocol.go:135][INFO] CLOSE id.google.com:443 after 240s ->639B <-776B
+
+2019-06-11 00:31:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51620: write tcp 127.0.0.1:28999->127.0.0.1:51620: write: broken pipe
+
+2019-06-11 00:31:02 [protocol.go:135][INFO] CLOSE ssl.gstatic.com:443 after 240s ->641B <-776B
+
+2019-06-11 00:31:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51621: write tcp 127.0.0.1:28999->127.0.0.1:51621: write: broken pipe
+
+2019-06-11 00:31:03 [protocol.go:135][INFO] CLOSE www.gstatic.com:443 after 241s ->581B <-4KB
+
+2019-06-11 00:31:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:51624: write tcp 127.0.0.1:28999->127.0.0.1:51624: write: broken pipe
+
+2019-06-11 00:31:03 [protocol.go:135][INFO] CLOSE apis.google.com:443 after 241s ->581B <-3KB
+
+2019-06-11 00:31:14 [protocol.go:135][INFO] CLOSE www.googleadservices.com:443 after 240s ->1KB <-1KB
+
+2019-06-11 00:31:17 [protocol.go:135][INFO] CLOSE adservice.google.com.hk:443 after 242s ->1KB <-1KB
+
+2019-06-11 00:31:17 [protocol.go:135][INFO] CLOSE adservice.google.com:443 after 242s ->1KB <-1KB
+
+2019-06-11 00:31:18 [protocol.go:135][INFO] CLOSE googleads.g.doubleclick.net:443 after 241s ->1KB <-1KB
+
+2019-06-11 00:31:39 [protocol.go:135][INFO] CLOSE www.google.com.hk:443 after 278s ->7KB <-336KB
+
+2019-06-11 00:31:40 [protocol.go:135][INFO] CLOSE lh3.googleusercontent.com:443 after 277s ->1KB <-6KB
+
+2019-06-11 00:31:42 [protocol.go:135][INFO] CLOSE chrome-devtools-frontend.appspot.com:443 after 243s ->1015B <-398KB
+
+2019-06-11 00:32:08 [protocol.go:135][INFO] CLOSE www.google.com:443 after 297s ->7KB <-275KB
+
+2019-06-11 00:32:54 [protocol.go:135][INFO] CLOSE ssl.gstatic.com:443 after 314s ->1KB <-25KB
+
+2019-06-11 00:35:17 [main.go:25][INFO] LOCAL_SERVER HTTP proxy: 127.0.0.1:28999
+
+2019-06-11 00:35:32 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53629: read: connection reset by peer
+
+2019-06-11 00:35:41 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53649: read: connection reset by peer
+
+2019-06-11 00:35:41 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53650: read: connection reset by peer
+
+2019-06-11 00:35:41 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53651: read: connection reset by peer
+
+2019-06-11 00:35:41 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53644: read: connection reset by peer
+
+2019-06-11 00:35:41 [protocol.go:135][INFO] CLOSE hm.baidu.com:443 after 18s ->1KB <-506B
+
+2019-06-11 00:35:41 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53635: read: connection reset by peer
+
+2019-06-11 00:35:52 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53635: write tcp 127.0.0.1:28999->127.0.0.1:53635: write: broken pipe
+
+2019-06-11 00:35:52 [protocol.go:135][INFO] CLOSE twitter.com:443 after 30s ->643B <-3KB
+
+2019-06-11 00:36:01 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53735: read: connection reset by peer
+
+2019-06-11 00:36:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53735: write tcp 127.0.0.1:28999->127.0.0.1:53735: write: broken pipe
+
+2019-06-11 00:36:03 [protocol.go:135][INFO] CLOSE video.twimg.com:443 after 21s ->1KB <-4KB
+
+2019-06-11 00:37:27 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:53814: read: connection reset by peer
+
+2019-06-11 00:37:27 [protocol.go:135][INFO] CLOSE ton.twimg.com:443 after 85s ->1KB <-4KB
+
+2019-06-11 00:37:44 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54242: read: connection reset by peer
+
+2019-06-11 00:37:44 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54244: read: connection reset by peer
+
+2019-06-11 00:37:47 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54267: read: connection reset by peer
+
+2019-06-11 00:37:49 [protocol.go:135][INFO] CLOSE phd.aws.amazon.com:443 after 11s ->4KB <-8KB
+
+2019-06-11 00:38:28 [protocol.go:135][INFO] CLOSE abs.twimg.com:443 after 181s ->1KB <-30KB
+
+2019-06-11 00:38:32 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54486: read: connection reset by peer
+
+2019-06-11 00:38:34 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54495: read: connection reset by peer
+
+2019-06-11 00:38:34 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54496: read: connection reset by peer
+
+2019-06-11 00:38:42 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54501: read: connection reset by peer
+
+2019-06-11 00:38:51 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54579: read: connection reset by peer
+
+2019-06-11 00:38:51 [protocol.go:135][INFO] CLOSE syndication.exosrv.com:443 after 6s ->1KB <-4KB
+
+2019-06-11 00:38:52 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 85s ->29KB <-41KB
+
+2019-06-11 00:38:52 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 70s ->5KB <-6KB
+
+2019-06-11 00:38:53 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 85s ->44KB <-65KB
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54551: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54547: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54549: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54566: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54565: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54567: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54554: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54557: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54553: read: connection reset by peer
+
+2019-06-11 00:38:53 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 71s ->5KB <-5KB
+
+2019-06-11 00:38:53 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 75s ->22KB <-8KB
+
+2019-06-11 00:38:59 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54586: read: connection reset by peer
+
+2019-06-11 00:38:59 [protocol.go:135][INFO] CLOSE static.exosrv.com:443 after 12s ->1KB <-87KB
+
+2019-06-11 00:38:59 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 76s ->28KB <-11KB
+
+2019-06-11 00:39:01 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 538ms <-920B
+
+2019-06-11 00:39:01 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 144ms <-4KB
+
+2019-06-11 00:39:01 [protocol.go:135][INFO] CLOSE ton.twimg.com:443 after 180s ->1KB <-59KB
+
+2019-06-11 00:39:02 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 220ms <-2KB
+
+2019-06-11 00:39:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54554: write tcp 127.0.0.1:28999->127.0.0.1:54554: write: broken pipe
+
+2019-06-11 00:39:03 [protocol.go:135][INFO] CLOSE ssl.p.jwpcdn.com:443 after 20s ->1KB <-5KB
+
+2019-06-11 00:39:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54557: write tcp 127.0.0.1:28999->127.0.0.1:54557: write: broken pipe
+
+2019-06-11 00:39:03 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54553: write tcp 127.0.0.1:28999->127.0.0.1:54553: write: broken pipe
+
+2019-06-11 00:39:03 [protocol.go:135][INFO] CLOSE ssl.p.jwpcdn.com:443 after 21s ->1KB <-5KB
+
+2019-06-11 00:39:03 [protocol.go:135][INFO] CLOSE ssl.p.jwpcdn.com:443 after 21s ->1KB <-5KB
+
+2019-06-11 00:39:03 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 502ms <-4KB
+
+2019-06-11 00:39:05 [protocol.go:72][INFO] RESPONSE www.viidii.info 200 OK in 1s <-1KB
+
+2019-06-11 00:39:05 [protocol.go:72][INFO] RESPONSE s103.cnzz.com 200 OK in 1s <-3KB
+
+2019-06-11 00:39:07 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:39:07 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 2s <-619B
+
+2019-06-11 00:39:08 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 1s <-319B
+
+2019-06-11 00:39:09 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 1s <-43B
+
+2019-06-11 00:39:09 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 755ms <-43B
+
+2019-06-11 00:39:21 [protocol.go:135][INFO] CLOSE googleads.g.doubleclick.net:443 after 240s ->2KB <-1KB
+
+2019-06-11 00:39:21 [protocol.go:135][INFO] CLOSE www.googleapis.com:443 after 240s ->1KB <-1KB
+
+2019-06-11 00:39:22 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53629: write tcp 127.0.0.1:28999->127.0.0.1:53629: write: broken pipe
+
+2019-06-11 00:39:22 [protocol.go:135][INFO] CLOSE cuscochromeextension-pa.googleapis.com:443 after 240s ->581B <-4KB
+
+2019-06-11 00:39:24 [protocol.go:135][INFO] CLOSE pagead2.googlesyndication.com:443 after 240s ->2KB <-1KB
+
+2019-06-11 00:39:26 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 242s ->3KB <-1KB
+
+2019-06-11 00:39:26 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53649: write tcp 127.0.0.1:28999->127.0.0.1:53649: write: broken pipe
+
+2019-06-11 00:39:26 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 242s ->581B <-4KB
+
+2019-06-11 00:39:27 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53650: write tcp 127.0.0.1:28999->127.0.0.1:53650: write: broken pipe
+
+2019-06-11 00:39:27 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 243s ->581B <-4KB
+
+2019-06-11 00:39:27 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53651: write tcp 127.0.0.1:28999->127.0.0.1:53651: write: broken pipe
+
+2019-06-11 00:39:27 [protocol.go:135][INFO] CLOSE csi.gstatic.com:443 after 243s ->641B <-776B
+
+2019-06-11 00:39:39 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54650: read: connection reset by peer
+
+2019-06-11 00:39:39 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54599: read: connection reset by peer
+
+2019-06-11 00:39:39 [protocol.go:135][INFO] CLOSE jwpltx.com:443 after 50s ->2KB <-5KB
+
+2019-06-11 00:39:39 [protocol.go:135][INFO] CLOSE www.google.com:443 after 39s ->640B <-212B
+
+2019-06-11 00:39:39 [protocol.go:120][ERROR] Copy: EOF
+
+2019-06-11 00:39:39 [protocol.go:135][INFO] CLOSE twitter.com:443 after 256s ->181KB <-668KB
+
+2019-06-11 00:40:10 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 546ms <-12KB
+
+2019-06-11 00:40:11 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 1s <-22B
+
+2019-06-11 00:40:11 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 1s <-43B
+
+2019-06-11 00:40:11 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:54548: read: connection reset by peer
+
+2019-06-11 00:40:13 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 1s <-43B
+
+2019-06-11 00:40:13 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 91s ->41KB <-10KB
+
+2019-06-11 00:40:17 [protocol.go:135][INFO] CLOSE console.aws.amazon.com:443 after 159s ->2KB <-6KB
+
+2019-06-11 00:40:19 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 494ms <-21KB
+
+2019-06-11 00:40:19 [protocol.go:72][INFO] RESPONSE www.viidii.info 200 OK in 134ms <-2KB
+
+2019-06-11 00:40:19 [protocol.go:72][INFO] RESPONSE www.viidii.info 200 OK in 340ms <-1KB
+
+2019-06-11 00:40:19 [protocol.go:72][INFO] RESPONSE s103.cnzz.com 200 OK in 230ms <-3KB
+
+2019-06-11 00:40:19 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 218ms <-620B
+
+2019-06-11 00:40:20 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 642ms <-22B
+
+2019-06-11 00:40:20 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 521ms <-43B
+
+2019-06-11 00:40:20 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 621ms <-252B
+
+2019-06-11 00:40:20 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 392ms <-43B
+
+2019-06-11 00:40:39 [protocol.go:135][INFO] CLOSE abs.twimg.com:443 after 317s ->4KB <-935KB
+
+2019-06-11 00:40:40 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 318s ->12KB <-7MB
+
+2019-06-11 00:41:04 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 123s ->667B <-5KB
+
+2019-06-11 00:41:20 [protocol.go:135][INFO] CLOSE video.twimg.com:443 after 338s ->31KB <-24MB
+
+2019-06-11 00:41:30 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 473ms <-6KB
+
+2019-06-11 00:41:31 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 963ms <-620B
+
+2019-06-11 00:41:32 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 1s <-22B
+
+2019-06-11 00:41:32 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 658ms <-43B
+
+2019-06-11 00:41:33 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 1s <-43B
+
+2019-06-11 00:41:34 [protocol.go:135][INFO] CLOSE www.gstatic.com:443 after 240s ->1KB <-73KB
+
+2019-06-11 00:41:34 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54242: write tcp 127.0.0.1:28999->127.0.0.1:54242: write: broken pipe
+
+2019-06-11 00:41:34 [protocol.go:135][INFO] CLOSE fonts.gstatic.com:443 after 240s ->643B <-776B
+
+2019-06-11 00:41:34 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54244: write tcp 127.0.0.1:28999->127.0.0.1:54244: write: broken pipe
+
+2019-06-11 00:41:34 [protocol.go:135][INFO] CLOSE www.gstatic.com:443 after 240s ->581B <-4KB
+
+2019-06-11 00:41:41 [protocol.go:135][INFO] CLOSE ssl.p.jwpcdn.com:443 after 179s ->1KB <-7KB
+
+2019-06-11 00:41:41 [protocol.go:135][INFO] CLOSE ads.exosrv.com:443 after 178s ->1KB <-6KB
+
+2019-06-11 00:41:42 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 487ms <-22KB
+
+2019-06-11 00:41:42 [protocol.go:72][INFO] RESPONSE www.viidii.info 200 OK in 235ms <-657B
+
+2019-06-11 00:41:42 [protocol.go:135][INFO] CLOSE ssl.p.jwpcdn.com:443 after 179s ->1KB <-189KB
+
+2019-06-11 00:41:42 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 512ms <-43B
+
+2019-06-11 00:41:42 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 653ms <-22B
+
+2019-06-11 00:41:43 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54563: write tcp 127.0.0.1:28999->127.0.0.1:54563: write: broken pipe
+
+2019-06-11 00:41:43 [protocol.go:135][INFO] CLOSE ad.xo104.com:443 after 180s ->610B <-6KB
+
+2019-06-11 00:41:43 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54551: write tcp 127.0.0.1:28999->127.0.0.1:54551: write: broken pipe
+
+2019-06-11 00:41:43 [protocol.go:135][INFO] CLOSE ad.xo104.com:443 after 180s ->610B <-6KB
+
+2019-06-11 00:41:43 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 539ms <-43B
+
+2019-06-11 00:41:43 [protocol.go:135][INFO] CLOSE ad.xo104.com:443 after 180s ->2KB <-179KB
+
+2019-06-11 00:41:48 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 519ms <-25KB
+
+2019-06-11 00:41:49 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 501ms <-43B
+
+2019-06-11 00:41:49 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 648ms <-22B
+
+2019-06-11 00:41:49 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 546ms <-43B
+
+2019-06-11 00:41:56 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 550ms <-12KB
+
+2019-06-11 00:41:56 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 211ms <-619B
+
+2019-06-11 00:41:56 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 579ms <-22B
+
+2019-06-11 00:41:56 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 477ms <-43B
+
+2019-06-11 00:41:57 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 487ms <-43B
+
+2019-06-11 00:42:01 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 379ms <-8KB
+
+2019-06-11 00:42:05 [protocol.go:72][INFO] RESPONSE i67.tinypic.com 200 OK in 4s <-76KB
+
+2019-06-11 00:42:07 [protocol.go:135][INFO] CLOSE s10611.gcdn.info:443 after 203s ->2KB <-5MB
+
+2019-06-11 00:42:09 [protocol.go:72][INFO] RESPONSE www.sinaimg.cn 200 OK in 8s <-2MB
+
+2019-06-11 00:42:09 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:42:11 [protocol.go:72][INFO] RESPONSE p4.so.qhimg.com 200 OK in 2s <-4KB
+
+2019-06-11 00:42:13 [protocol.go:72][INFO] RESPONSE ww2.sinaimg.cn 200 OK in 12s <-2MB
+
+2019-06-11 00:42:15 [protocol.go:72][INFO] RESPONSE img.mp.itc.cn 200 OK in 3s <-56KB
+
+2019-06-11 00:42:15 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 722ms <-252B
+
+2019-06-11 00:42:15 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 1s <-22B
+
+2019-06-11 00:42:15 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 334ms <-22B
+
+2019-06-11 00:42:15 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 520ms <-43B
+
+2019-06-11 00:42:16 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 744ms <-43B
+
+2019-06-11 00:42:16 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 768ms <-43B
+
+2019-06-11 00:42:16 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 1s <-466KB
+
+2019-06-11 00:42:18 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:42:18 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 1s <-43B
+
+2019-06-11 00:42:19 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 2s <-1MB
+
+2019-06-11 00:42:19 [protocol.go:72][INFO] RESPONSE www.asqql.com 301 Moved Permanently in 9s <-145B
+
+2019-06-11 00:42:20 [protocol.go:72][INFO] RESPONSE www.s2tu.com 301 Moved Permanently in 1s <-0B
+
+2019-06-11 00:42:20 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:42:23 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 6s <-1MB
+
+2019-06-11 00:42:23 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:42:25 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 5s <-552KB
+
+2019-06-11 00:42:26 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:42:30 [protocol.go:135][INFO] CLOSE www.google.com:443 after 298s ->1KB <-4KB
+
+2019-06-11 00:42:33 [protocol.go:135][INFO] CLOSE www.google.com:443 after 434s ->4KB <-49KB
+
+2019-06-11 00:42:33 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 14s <-1MB
+
+2019-06-11 00:42:34 [protocol.go:135][INFO] CLOSE play.google.com:443 after 242s ->1KB <-863B
+
+2019-06-11 00:42:34 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54501: write tcp 127.0.0.1:28999->127.0.0.1:54501: write: broken pipe
+
+2019-06-11 00:42:34 [protocol.go:135][INFO] CLOSE fonts.gstatic.com:443 after 242s ->643B <-776B
+
+2019-06-11 00:42:34 [protocol.go:135][INFO] CLOSE clients4.google.com:443 after 390s ->19KB <-7KB
+
+2019-06-11 00:42:35 [protocol.go:135][INFO] CLOSE fonts.googleapis.com:443 after 301s ->1KB <-4KB
+
+2019-06-11 00:42:36 [protocol.go:135][INFO] CLOSE www.google-analytics.com:443 after 414s ->2KB <-2KB
+
+2019-06-11 00:42:36 [protocol.go:135][INFO] CLOSE clients1.google.com:443 after 428s ->2KB <-2KB
+
+2019-06-11 00:42:36 [protocol.go:135][INFO] CLOSE www.googletagmanager.com:443 after 243s ->971B <-29KB
+
+2019-06-11 00:42:37 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 14s <-1MB
+
+2019-06-11 00:42:37 [protocol.go:135][INFO] CLOSE stats.g.doubleclick.net:443 after 242s ->1KB <-1KB
+
+2019-06-11 00:42:42 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 17s <-1MB
+
+2019-06-11 00:42:42 [protocol.go:135][INFO] CLOSE www.touimg.com:443 after 16s ->517B <-2KB
+
+2019-06-11 00:42:43 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54547: write tcp 127.0.0.1:28999->127.0.0.1:54547: write: broken pipe
+
+2019-06-11 00:42:43 [protocol.go:135][INFO] CLOSE fonts.gstatic.com:443 after 241s ->581B <-4KB
+
+2019-06-11 00:42:43 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54549: write tcp 127.0.0.1:28999->127.0.0.1:54549: write: broken pipe
+
+2019-06-11 00:42:43 [protocol.go:135][INFO] CLOSE fonts.gstatic.com:443 after 241s ->581B <-4KB
+
+2019-06-11 00:42:44 [protocol.go:135][INFO] CLOSE www.google-analytics.com:443 after 241s ->1KB <-1KB
+
+2019-06-11 00:42:44 [protocol.go:135][INFO] CLOSE fonts.googleapis.com:443 after 241s ->1KB <-1KB
+
+2019-06-11 00:42:47 [protocol.go:135][INFO] CLOSE graph.baidu.com:443 after 33s ->1KB <-21KB
+
+2019-06-11 00:42:47 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 14s <-1MB
+
+2019-06-11 00:42:49 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 11s <-1MB
+
+2019-06-11 00:42:53 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 34s <-3MB
+
+2019-06-11 00:42:53 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:55624: read: connection reset by peer
+
+2019-06-11 00:42:53 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 10s <-1MB
+
+2019-06-11 00:42:54 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 8s ->4KB <-6KB
+
+2019-06-11 00:42:56 [protocol.go:135][INFO] CLOSE ssl.gstatic.com:443 after 242s ->1KB <-1KB
+
+2019-06-11 00:42:56 [protocol.go:135][INFO] CLOSE phd.aws.amazon.com:443 after 15s ->4KB <-8KB
+
+2019-06-11 00:42:57 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 8s <-917KB
+
+2019-06-11 00:42:58 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 10s <-1MB
+
+2019-06-11 00:42:58 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 5s <-451KB
+
+2019-06-11 00:42:59 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 34s <-3MB
+
+2019-06-11 00:43:00 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 43s <-5MB
+
+2019-06-11 00:43:01 [protocol.go:135][INFO] CLOSE www.google.com:443 after 241s ->1KB <-1KB
+
+2019-06-11 00:43:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54650: write tcp 127.0.0.1:28999->127.0.0.1:54650: write: broken pipe
+
+2019-06-11 00:43:02 [protocol.go:135][INFO] CLOSE fonts.gstatic.com:443 after 241s ->581B <-4KB
+
+2019-06-11 00:43:06 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 9s <-1MB
+
+2019-06-11 00:43:15 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 22s <-3MB
+
+2019-06-11 00:43:22 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 22s <-3MB
+
+2019-06-11 00:43:23 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 23s <-3MB
+
+2019-06-11 00:43:46 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 23s <-3MB
+
+2019-06-11 00:43:46 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 31s <-5MB
+
+2019-06-11 00:43:54 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 31s <-5MB
+
+2019-06-11 00:44:04 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 17s <-4MB
+
+2019-06-11 00:44:08 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 21s <-4MB
+
+2019-06-11 00:44:17 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 23s <-4MB
+
+2019-06-11 00:44:22 [protocol.go:135][INFO] CLOSE clients1.google.com:443 after 313s ->1KB <-1KB
+
+2019-06-11 00:44:27 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 19s <-3MB
+
+2019-06-11 00:44:35 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 31s <-5MB
+
+2019-06-11 00:44:56 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 127s ->667B <-5KB
+
+2019-06-11 00:45:09 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 42s <-6MB
+
+2019-06-11 00:45:10 [protocol.go:135][INFO] CLOSE i.loli.net:443 after 185s ->953B <-2MB
+
+2019-06-11 00:45:13 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54486: write tcp 127.0.0.1:28999->127.0.0.1:54486: write: broken pipe
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE pigav.com:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:13 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54500: write tcp 127.0.0.1:28999->127.0.0.1:54500: write: broken pipe
+
+2019-06-11 00:45:13 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54494: write tcp 127.0.0.1:28999->127.0.0.1:54494: write: broken pipe
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE js1.pigav.com:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE cdn.pigav.com:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:13 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54495: write tcp 127.0.0.1:28999->127.0.0.1:54495: write: broken pipe
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE cdn.pigav.com:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:13 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54496: write tcp 127.0.0.1:28999->127.0.0.1:54496: write: broken pipe
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE cdn.pigav.com:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:13 [protocol.go:135][INFO] CLOSE cdn.pigav.com:443 after 401s ->1KB <-151KB
+
+2019-06-11 00:45:14 [protocol.go:135][INFO] CLOSE jw.pigav.com:443 after 402s ->975B <-33KB
+
+2019-06-11 00:45:14 [protocol.go:135][INFO] CLOSE js1.pigav.com:443 after 402s ->1KB <-175KB
+
+2019-06-11 00:45:15 [protocol.go:135][INFO] CLOSE cdn.pigav.com:443 after 402s ->1011B <-79KB
+
+2019-06-11 00:45:16 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 401s ->992B <-4KB
+
+2019-06-11 00:45:16 [protocol.go:135][INFO] CLOSE image.igsr.me:443 after 404s ->3KB <-480KB
+
+2019-06-11 00:45:23 [protocol.go:135][INFO] CLOSE pigav.com:443 after 412s ->1KB <-40KB
+
+2019-06-11 00:45:23 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 65s <-12MB
+
+2019-06-11 00:45:24 [protocol.go:135][INFO] CLOSE image.igsr.me:443 after 401s ->1KB <-215KB
+
+2019-06-11 00:45:24 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54567: write tcp 127.0.0.1:28999->127.0.0.1:54567: write: broken pipe
+
+2019-06-11 00:45:24 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54565: write tcp 127.0.0.1:28999->127.0.0.1:54565: write: broken pipe
+
+2019-06-11 00:45:24 [protocol.go:135][INFO] CLOSE image.igsr.me:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:24 [protocol.go:135][INFO] CLOSE image.igsr.me:443 after 401s ->581B <-2KB
+
+2019-06-11 00:45:24 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54566: write tcp 127.0.0.1:28999->127.0.0.1:54566: write: broken pipe
+
+2019-06-11 00:45:24 [protocol.go:135][INFO] CLOSE image.igsr.me:443 after 401s ->613B <-724B
+
+2019-06-11 00:45:25 [protocol.go:135][INFO] CLOSE img.pigav.com:443 after 401s ->1KB <-192KB
+
+2019-06-11 00:45:32 [protocol.go:72][INFO] RESPONSE www.louimg.com 200 OK in 56s <-13MB
+
+2019-06-11 00:45:54 [protocol.go:135][INFO] CLOSE www.google.com:443 after 415s ->2KB <-46KB
+
+2019-06-11 00:46:47 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:56149: read: connection reset by peer
+
+2019-06-11 00:46:47 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:56150: read: connection reset by peer
+
+2019-06-11 00:46:47 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 123s ->1KB <-4KB
+
+2019-06-11 00:46:47 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 123s ->1KB <-4KB
+
+2019-06-11 00:46:47 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:56151: read: connection reset by peer
+
+2019-06-11 00:46:47 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 123s ->1KB <-4KB
+
+2019-06-11 00:46:59 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 400s ->1000B <-30KB
+
+2019-06-11 00:47:56 [protocol.go:135][INFO] CLOSE ssl.gstatic.com:443 after 241s ->1KB <-1KB
+
+2019-06-11 00:47:58 [protocol.go:135][INFO] CLOSE docs.google.com:443 after 241s ->1KB <-2KB
+
+2019-06-11 00:48:38 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:56934: read: connection reset by peer
+
+2019-06-11 00:48:38 [protocol.go:135][INFO] CLOSE phd.aws.amazon.com:443 after 51s ->4KB <-6KB
+
+2019-06-11 00:48:38 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 377ms <-8KB
+
+2019-06-11 00:48:39 [ssh.go:89][INFO] dial cdn3.snapgram.co:80 failed: ssh: rejected: connect failed (Name or service not known), 
+2019-06-11 00:48:39 [protocol.go:53][INFO] RoundTrip: ssh: rejected: connect failed (Name or service not known)
+
+2019-06-11 00:48:41 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:48:41 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:48:44 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:48:45 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 3s <-43B
+
+2019-06-11 00:48:48 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 4s <-43B
+
+2019-06-11 00:48:48 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57147: read: connection reset by peer
+
+2019-06-11 00:48:48 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 4s <-22B
+
+2019-06-11 00:48:51 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:48:51 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 3s <-43B
+
+2019-06-11 00:48:51 [protocol.go:72][INFO] RESPONSE ww2.sinaimg.cn 200 OK in 7s <-894KB
+
+2019-06-11 00:48:53 [protocol.go:72][INFO] RESPONSE www.x6img.com 301 Moved Permanently in 2s <-0B
+
+2019-06-11 00:48:54 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:48:54 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:48:55 [protocol.go:135][INFO] CLOSE s2tu.com:443 after 405s ->992B <-201KB
+
+2019-06-11 00:48:57 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:48:58 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 3s <-43B
+
+2019-06-11 00:48:58 [protocol.go:72][INFO] RESPONSE www.nsaimg.com 200 OK in 3s <-228KB
+
+2019-06-11 00:48:59 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 4s <-22B
+
+2019-06-11 00:48:59 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:48:59 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:56939: read: connection reset by peer
+
+2019-06-11 00:48:59 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 71s ->4KB <-6KB
+
+2019-06-11 00:49:02 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:49:07 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57201: read: connection reset by peer
+
+2019-06-11 00:49:13 [protocol.go:135][INFO] CLOSE www.s2tu.com:443 after 413s ->974B <-253KB
+
+2019-06-11 00:50:17 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57485: read: connection reset by peer
+
+2019-06-11 00:50:17 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57484: read: connection reset by peer
+
+2019-06-11 00:50:26 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57485: write tcp 127.0.0.1:28999->127.0.0.1:57485: write: broken pipe
+
+2019-06-11 00:50:26 [protocol.go:135][INFO] CLOSE syndication.twitter.com:443 after 30s ->568B <-190B
+
+2019-06-11 00:50:45 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 86s ->9KB <-8MB
+
+2019-06-11 00:51:54 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:51:58 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 4s <-22B
+
+2019-06-11 00:52:01 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:52:03 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:52:08 [protocol.go:72][INFO] RESPONSE ww1.sinaimg.cn 200 OK in 14s <-3MB
+
+2019-06-11 00:52:25 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57996: read: connection reset by peer
+
+2019-06-11 00:52:25 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:57994: read: connection reset by peer
+
+2019-06-11 00:52:27 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:52:27 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:52:28 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-8KB
+
+2019-06-11 00:52:30 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:52:30 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53670: write tcp 127.0.0.1:28999->127.0.0.1:53670: write: broken pipe
+
+2019-06-11 00:52:30 [protocol.go:135][INFO] CLOSE analytics.twitter.com:443 after 1021s ->1KB <-4KB
+
+2019-06-11 00:52:30 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:52:30 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-7KB
+
+2019-06-11 00:52:32 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 3s <-22B
+
+2019-06-11 00:52:32 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 1s <-43B
+
+2019-06-11 00:52:32 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 1s <-43B
+
+2019-06-11 00:52:32 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 1s <-22B
+
+2019-06-11 00:52:35 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:52:39 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58136: read: connection reset by peer
+
+2019-06-11 00:52:39 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58134: read: connection reset by peer
+
+2019-06-11 00:52:40 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53680: write tcp 127.0.0.1:28999->127.0.0.1:53680: write: broken pipe
+
+2019-06-11 00:52:40 [protocol.go:135][INFO] CLOSE syndication.twitter.com:443 after 1030s ->2KB <-4KB
+
+2019-06-11 00:52:41 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53685: write tcp 127.0.0.1:28999->127.0.0.1:53685: write: broken pipe
+
+2019-06-11 00:52:41 [protocol.go:135][INFO] CLOSE api.twitter.com:443 after 1029s ->2KB <-4KB
+
+2019-06-11 00:52:41 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-5KB
+
+2019-06-11 00:52:41 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:53690: write tcp 127.0.0.1:28999->127.0.0.1:53690: write: broken pipe
+
+2019-06-11 00:52:41 [protocol.go:135][INFO] CLOSE api.twitter.com:443 after 1028s ->3KB <-17KB
+
+2019-06-11 00:52:43 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:52:43 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:52:44 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-4KB
+
+2019-06-11 00:52:45 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 1s <-22B
+
+2019-06-11 00:52:46 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:52:47 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 2s <-619B
+
+2019-06-11 00:52:50 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 3s <-320B
+
+2019-06-11 00:52:50 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 3s <-43B
+
+2019-06-11 00:52:53 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:52:54 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58218: read: connection reset by peer
+
+2019-06-11 00:52:54 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58216: read: connection reset by peer
+
+2019-06-11 00:52:58 [protocol.go:135][INFO] CLOSE ssl.gstatic.com:443 after 243s ->1KB <-1KB
+
+2019-06-11 00:52:59 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-11KB
+
+2019-06-11 00:53:02 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:53:02 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 3s <-43B
+
+2019-06-11 00:53:02 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58266: read: connection reset by peer
+
+2019-06-11 00:53:03 [protocol.go:135][INFO] CLOSE phd.aws.amazon.com:443 after 15s ->4KB <-6KB
+
+2019-06-11 00:53:05 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:53:10 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58314: read: connection reset by peer
+
+2019-06-11 00:53:12 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:54616: write tcp 127.0.0.1:28999->127.0.0.1:54616: write: broken pipe
+
+2019-06-11 00:53:12 [protocol.go:135][INFO] CLOSE clients4.google.com:443 after 858s ->29KB <-19KB
+
+2019-06-11 00:53:12 [protocol.go:72][INFO] RESPONSE t66y.com 200 OK in 1s <-3KB
+
+2019-06-11 00:53:15 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:53:16 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 3s <-22B
+
+2019-06-11 00:53:19 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 3s <-43B
+
+2019-06-11 00:53:19 [protocol.go:72][INFO] RESPONSE www.f2dmb.me 301 Moved Permanently in 3s <-154B
+
+2019-06-11 00:53:21 [protocol.go:72][INFO] RESPONSE www.f2dmb.me 200 OK in 1s <-462B
+
+2019-06-11 00:53:22 [protocol.go:135][INFO] CLOSE abs.twimg.com:443 after 206s ->2KB <-110KB
+
+2019-06-11 00:53:24 [protocol.go:72][INFO] RESPONSE f2dmb.me 200 OK in 3s <-1KB
+
+2019-06-11 00:53:26 [protocol.go:72][INFO] RESPONSE f2dmb.me 200 OK in 2s <-32KB
+
+2019-06-11 00:53:27 [protocol.go:72][INFO] RESPONSE f2dmb.me 200 OK in 3s <-49KB
+
+2019-06-11 00:54:00 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57484: write tcp 127.0.0.1:28999->127.0.0.1:57484: write: broken pipe
+
+2019-06-11 00:54:00 [protocol.go:135][INFO] CLOSE www.google-analytics.com:443 after 244s ->650B <-776B
+
+2019-06-11 00:54:00 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58450: read: connection reset by peer
+
+2019-06-11 00:54:00 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 32s ->1KB <-4KB
+
+2019-06-11 00:54:00 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58461: read: connection reset by peer
+
+2019-06-11 00:54:00 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 31s ->1KB <-4KB
+
+2019-06-11 00:54:00 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58462: read: connection reset by peer
+
+2019-06-11 00:54:00 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 31s ->1KB <-4KB
+
+2019-06-11 00:54:00 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58451: read: connection reset by peer
+
+2019-06-11 00:54:00 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 32s ->1KB <-4KB
+
+2019-06-11 00:54:02 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58467: write tcp 127.0.0.1:28999->127.0.0.1:58467: write: broken pipe
+
+2019-06-11 00:54:02 [protocol.go:135][INFO] CLOSE t.co:443 after 31s ->643B <-3KB
+
+2019-06-11 00:54:10 [protocol.go:120][ERROR] Copy: EOF
+
+2019-06-11 00:54:10 [protocol.go:135][INFO] CLOSE clients4.google.com:443 after 290s ->2KB <-212B
+
+2019-06-11 00:54:31 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 62s ->1KB <-3KB
+
+2019-06-11 00:54:35 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 98s ->667B <-5KB
+
+2019-06-11 00:54:54 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58291: read: connection reset by peer
+
+2019-06-11 00:54:54 [protocol.go:135][INFO] CLOSE ap-northeast-1.console.aws.amazon.com:443 after 120s ->4KB <-6KB
+
+2019-06-11 00:55:12 [protocol.go:65][ERROR] Copy: write tcp 127.0.0.1:28999->127.0.0.1:58564: write: broken pipe
+
+2019-06-11 00:55:13 [protocol.go:135][INFO] CLOSE s10611.gcdn.info:443 after 192s ->1KB <-2MB
+
+2019-06-11 00:55:17 [protocol.go:65][ERROR] Copy: write tcp 127.0.0.1:28999->127.0.0.1:58568: write: broken pipe
+
+2019-06-11 00:55:19 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57147: write tcp 127.0.0.1:28999->127.0.0.1:57147: write: broken pipe
+
+2019-06-11 00:55:19 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 401s ->620B <-740B
+
+2019-06-11 00:55:20 [protocol.go:135][INFO] CLOSE www.skuimg.com:443 after 785s ->1KB <-4KB
+
+2019-06-11 00:55:33 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57201: write tcp 127.0.0.1:28999->127.0.0.1:57201: write: broken pipe
+
+2019-06-11 00:55:33 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 403s ->620B <-740B
+
+2019-06-11 00:55:36 [protocol.go:135][INFO] CLOSE i.niupic.com:443 after 405s ->934B <-410KB
+
+2019-06-11 00:55:39 [protocol.go:135][INFO] CLOSE www.x6img.com:443 after 405s ->972B <-1002KB
+
+2019-06-11 00:56:37 [protocol.go:135][INFO] CLOSE video.twimg.com:443 after 368s ->2KB <-88KB
+
+2019-06-11 00:56:59 [protocol.go:135][INFO] CLOSE abs.twimg.com:443 after 211s ->2KB <-29KB
+
+2019-06-11 00:57:01 [protocol.go:135][INFO] CLOSE pbs.twimg.com:443 after 212s ->7KB <-4MB
+
+2019-06-11 00:57:43 [protocol.go:135][INFO] CLOSE ssl.google-analytics.com:443 after 244s ->1KB <-21KB
+
+2019-06-11 00:57:51 [protocol.go:72][INFO] RESPONSE t66y.com 304 Not Modified in 1s <-0B
+
+2019-06-11 00:57:54 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:57:54 [protocol.go:135][INFO] CLOSE clients1.google.com:443 after 313s ->1KB <-1KB
+
+2019-06-11 00:57:55 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 3s <-620B
+
+2019-06-11 00:57:57 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:57:58 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 2s <-252B
+
+2019-06-11 00:57:59 [protocol.go:135][INFO] CLOSE www.google-analytics.com:443 after 457s ->2KB <-1KB
+
+2019-06-11 00:58:00 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:58:08 [protocol.go:120][ERROR] Copy: read tcp 127.0.0.1:28999->127.0.0.1:58593: read: connection reset by peer
+
+2019-06-11 00:58:08 [protocol.go:135][INFO] CLOSE phd.aws.amazon.com:443 after 14s ->4KB <-6KB
+
+2019-06-11 00:58:10 [protocol.go:72][INFO] RESPONSE t66y.com 304 Not Modified in 1s <-0B
+
+2019-06-11 00:58:11 [protocol.go:72][INFO] RESPONSE c.cnzz.com 200 OK in 1s <-620B
+
+2019-06-11 00:58:12 [protocol.go:72][INFO] RESPONSE online.cnzz.com 200 OK in 974ms <-252B
+
+2019-06-11 00:58:12 [protocol.go:72][INFO] RESPONSE hzs6.cnzz.com 200 OK in 2s <-22B
+
+2019-06-11 00:58:13 [protocol.go:72][INFO] RESPONSE cnzz.mmstat.com 302 Found in 2s <-43B
+
+2019-06-11 00:58:16 [protocol.go:72][INFO] RESPONSE pcookie.cnzz.com 200 OK in 2s <-43B
+
+2019-06-11 00:58:36 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57994: write tcp 127.0.0.1:28999->127.0.0.1:57994: write: broken pipe
+
+2019-06-11 00:58:36 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:57996: write tcp 127.0.0.1:28999->127.0.0.1:57996: write: broken pipe
+
+2019-06-11 00:58:36 [protocol.go:135][INFO] CLOSE www.s2tu.com:443 after 404s ->612B <-724B
+
+2019-06-11 00:58:36 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 404s ->581B <-2KB
+
+2019-06-11 00:59:08 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58136: write tcp 127.0.0.1:28999->127.0.0.1:58136: write: broken pipe
+
+2019-06-11 00:59:08 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 403s ->581B <-2KB
+
+2019-06-11 00:59:08 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58134: write tcp 127.0.0.1:28999->127.0.0.1:58134: write: broken pipe
+
+2019-06-11 00:59:08 [protocol.go:135][INFO] CLOSE www.s2tu.com:443 after 403s ->612B <-724B
+
+2019-06-11 00:59:12 [protocol.go:135][INFO] CLOSE www.s6tu.com:443 after 404s ->948B <-460KB
+
+2019-06-11 00:59:23 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58218: write tcp 127.0.0.1:28999->127.0.0.1:58218: write: broken pipe
+
+2019-06-11 00:59:23 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58216: write tcp 127.0.0.1:28999->127.0.0.1:58216: write: broken pipe
+
+2019-06-11 00:59:23 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 403s ->581B <-2KB
+
+2019-06-11 00:59:23 [protocol.go:135][INFO] CLOSE www.s2tu.com:443 after 403s ->581B <-3KB
+
+2019-06-11 00:59:29 [protocol.go:135][INFO] CLOSE www.skeimg.com:443 after 1032s ->1KB <-8MB
+
+2019-06-11 00:59:41 [protocol.go:120][ERROR] Copy: readfrom tcp 127.0.0.1:28999->127.0.0.1:58314: write tcp 127.0.0.1:28999->127.0.0.1:58314: write: broken pipe
+
+2019-06-11 00:59:41 [protocol.go:135][INFO] CLOSE cdnjs.cloudflare.com:443 after 403s ->581B <-2KB
+

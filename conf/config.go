@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"sort"
+	"errors"
 )
 
 type Config struct {
@@ -26,6 +27,9 @@ func NewConfig(path string) (*Config, error) {
 	err = json.Unmarshal(buf, conf)
 	if err != nil {
 		return nil, err
+	}
+	if len(conf.PrivateKey) == 0 {
+		return nil, errors.New("private_key id needed")
 	}
 	conf.PrivateKey = os.ExpandEnv(conf.PrivateKey)
 	sort.Strings(conf.BlockedList)

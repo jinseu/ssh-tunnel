@@ -44,10 +44,15 @@ func initPassword(cliCfg *ssh.ClientConfig, URL *url.URL){
 }
 
 func NewSSH(c *conf.Config) *http.Transport {
-	cliCfg := &ssh.ClientConfig{}
+	cliCfg := &ssh.ClientConfig{
+		HostKeyCallback: func(hostname string, remote net.Addr, key ssh.PublicKey) error {
+            return nil
+        },
+	}
 
 	URL, err := url.Parse(c.RemoteAddress)
 	if err != nil {
+		logger.Error("init ssh", err.Error())
 		return nil
 	}
 
@@ -79,7 +84,6 @@ func NewSSH(c *conf.Config) *http.Transport {
 	}
 
 	dial := func(network, addr string) (c net.Conn, err error) {
-
 		c, err = client.Dial(network, addr)
 		if err != nil {
 			logger.Info("dial %s failed: %s, ", addr, err)
